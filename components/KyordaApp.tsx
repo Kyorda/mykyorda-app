@@ -4784,7 +4784,7 @@ Respond with warmth, clarity, and scientific accuracy. Use analogies when helpfu
               <Atom className="w-6 h-6 mr-2 text-blue-600" />
               Quantum Orbital Visualization
             </h3>
-            <QuantumOrbital orbitalType={currentConceptData.orbitalType} />
+            <QuantumOrbital orbitalType={currentConceptData.orbitalType as "1s" | "2s" | "2p" | undefined} />
           </div>
         )}
         
