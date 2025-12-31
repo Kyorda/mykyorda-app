@@ -4077,7 +4077,7 @@ Respond with warmth, clarity, and scientific accuracy. Use analogies when helpfu
     return correct / checks.length;
   };
   
-  const triggerAdaptiveHelp = (score) => {
+  const triggerAdaptiveHelp = (score: number) => {
     const missedQuestions = (currentConceptData.knowledgeChecks || []).filter(
       check => knowledgeCheckAnswers[check.id] !== check.correct
     );
