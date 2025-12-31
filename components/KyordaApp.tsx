@@ -4082,12 +4082,12 @@ Respond with warmth, clarity, and scientific accuracy. Use analogies when helpfu
       check => knowledgeCheckAnswers[check.id] !== check.correct
     );
     
-    let helpContent = {
-      type: 'struggling',
-      message: '',
-      suggestions: [],
-      alternativeExplanation: ''
-    };
+   let helpContent: { type: string; message: string; suggestions: string[]; alternativeExplanation: string } = {
+  type: 'struggling',
+  message: '',
+  suggestions: [],
+  alternativeExplanation: ''
+};
     
     if (confidenceLevel <= 2 && score < 0.5) {
       helpContent.message = "I notice you're feeling confused and some concepts aren't clicking yet. That's completely normal - quantum chemistry is challenging! Let me help you.";
